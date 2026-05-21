@@ -1,162 +1,558 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- google site verification -->
-   <meta
-    name="google-site-verification"
-    content="5TXYqdfovYZdosCfDDgIiY5YdMLBW5XGgM5vBWHiauM"
-  />
-  <meta name="google-site-verification" content="eygC_7SoTBsElEvnfjTuF9II6bwqj9sk_YUnxavWA2U" />
-  <!-- SEO Basic -->
-  <title>Faiz Musa | Portfolio & Projek</title>
-  <meta name="description" content="Website rasmi Faiz Musa. Portfolio, projek, pengalaman dan contact information." />
-  <meta name="keywords" content="Faiz Musa, portfolio, web developer, projek, GitHub Pages" />
-  <meta name="author" content="Faiz Musa" />
-  <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="5TXYqdfovYZdosCfDDgIiY5YdMLBW5XGgM5vBWHiauM" />
+    <meta name="google-site-verification" content="eygC_7SoTBsElEvnfjTuF9II6bwqj9sk_YUnxavWA2U" />
+    
+    <!-- SEO Metadata -->
+    <title>Muhammad Faez | Interactive Resume & Portfolio</title>
+    <meta name="description" content="Interactive Glassmorphic Resume of Muhammad Faez Bin Musa, Software Programmer. View experience, skills, and export as PDF/JPEG." />
+    <meta name="keywords" content="Muhammad Faez Bin Musa, Faiz Musa, Resume, Portfolio, Software Programmer, Web Developer, Interactive Resume Builder" />
+    <meta name="author" content="Muhammad Faez Bin Musa" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (Facebook / LinkedIn) -->
-  <meta property="og:title" content="Faiz Musa | Portfolio & Projek" />
-  <meta property="og:description" content="Portfolio rasmi Faiz Musa dibina menggunakan GitHub Pages." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://faizmusa97.github.io/" />
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:title" content="Muhammad Faez | Interactive Resume & Portfolio" />
+    <meta property="og:description" content="Explore my experience, skills, and interactive resume. Built with glassmorphism design and live PDF export." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://faizmusa97.github.io/" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Faiz Musa | Portfolio & Projek" />
-  <meta name="twitter:description" content="Portfolio rasmi Faiz Musa dibina menggunakan GitHub Pages." />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muhammad Faez | Interactive Resume & Portfolio" />
+    <meta name="twitter:description" content="Explore my experience, skills, and interactive resume. Built with glassmorphism design." />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://faizmusa97.github.io/" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://faizmusa97.github.io/" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Export Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Structured Data SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Faiz Musa",
-    "url": "https://faizmusa97.github.io/",
-    "sameAs": [
-      "https://github.com/faizmusa97"
-    ],
-    "jobTitle": "Web Developer"
-  }
-  </script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    <!-- Structured Data SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Faez Bin Musa",
+      "url": "https://faizmusa97.github.io/",
+      "sameAs": [
+        "https://github.com/faizmusa97"
+      ],
+      "jobTitle": "Software Programmer"
     }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background: #111827;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      background: white;
-      padding: 30px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      margin-bottom: 15px;
-      color: #111827;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #1d4ed8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      color: white;
-      margin-top: 30px;
-    }
-  </style>
+    </script>
 </head>
+
 <body>
+    <!-- Ambient Fluid Glowing Background Elements -->
+    <div class="bg-glows" aria-hidden="true">
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
+    </div>
 
-  <header>
-    <h1>Faiz Musa</h1>
-    <p>Portfolio Website menggunakan GitHub Pages</p>
-  </header>
+    <!-- ───────── EDITOR TOOLBAR ───────── -->
+    <header id="toolbar" class="toolbar">
+        <div class="toolbar-brand">
+            <i class="fa-solid fa-wand-magic-sparkles logo-icon"></i>
+            <span class="brand-text">Resume Builder <span class="brand-highlight">by Eiyz</span></span>
+        </div>
+        <div class="toolbar-actions">
+            <!-- Edit Mode Toggle -->
+            <button class="btn btn-secondary" id="toggleEditBtn" onclick="toggleEdit()" title="Toggle Editing Mode">
+                <i class="fa-solid fa-pen-to-square"></i> <span>Edit Mode</span>
+            </button>
+            <!-- Print/Glass Preview Toggle -->
+            <button class="btn btn-secondary" id="togglePreviewBtn" onclick="togglePreview()" title="Switch between Glass Dashboard & Paper Print preview">
+                <i class="fa-solid fa-eye"></i> <span>Print Preview</span>
+            </button>
+            <button class="btn btn-save" onclick="saveResume()" title="Save changes to browser memory">
+                <i class="fa-solid fa-floppy-disk"></i> Save
+            </button>
+            <button class="btn btn-reset" onclick="resetResume()" title="Reset to original template data">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+            </button>
+            <button class="btn btn-primary" onclick="generatePDF()" title="Download as ATS-friendly PDF">
+                <i class="fa-solid fa-file-pdf"></i> Export PDF
+            </button>
+            <button class="btn btn-primary" onclick="generateJPEG()" title="Download as Image">
+                <i class="fa-solid fa-file-image"></i> Export JPEG
+            </button>
+        </div>
+    </header>
 
-  <main>
-    <section>
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya seorang developer yang berminat dalam web development,
-        automation dan teknologi digital.
-      </p>
-    </section>
+    <!-- ───────── RESUME WRAPPER ───────── -->
+    <div class="page-wrapper">
+        <div id="resume" class="resume">
 
-    <section>
-      <h2>Projek</h2>
-      <p>
-        Senarai projek akan dipaparkan di sini.
-      </p>
+            <!-- ══════ LEFT SIDEBAR ══════ -->
+            <aside class="sidebar">
 
-      <a href="https://github.com/faizmusa97" class="btn" target="_blank">
-        GitHub Saya
-      </a>
-    </section>
+                <!-- Photo Section -->
+                <div class="photo-wrap">
+                    <img id="profileImg"
+                        src="https://ui-avatars.com/api/?name=Muhammad+Faez&background=ffffff&color=1a3a5c&size=150&bold=true"
+                        alt="Profile Photo" />
+                    <label class="photo-edit-btn" id="photoEditLabel" title="Change Photo">
+                        <i class="fa-solid fa-camera"></i>
+                        <input type="file" id="photoInput" accept="image/*" onchange="changePhoto(event)" hidden />
+                    </label>
+                </div>
 
-    <section>
-      <h2>Hubungi Saya</h2>
-      <p>Email: your-email@example.com</p>
-    </section>
-  </main>
+                <!-- Name & Title -->
+                <div class="name-block">
+                    <h1 class="name" contenteditable="false" id="fullName">Muhammad Faez Bin Musa</h1>
+                    <p class="job-title" contenteditable="false" id="jobTitle">Software Programmer</p>
+                </div>
 
-  <footer>
-    <p>© 2026 Faiz Musa. All rights reserved.</p>
-  </footer>
+                <!-- Personal Info -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading"><i class="fa-solid fa-circle-info"></i> Personal Info</h3>
+                    <ul class="info-list" id="personalInfoList">
+                        <li data-icon="fa-location-dot">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span contenteditable="false" id="infoAddress">B3-1-1 Blok B Jalan 6/3B, Taman Indah Murni, Segar, Kuala Lumpur, 51200, Malaysia</span>
+                        </li>
+                        <li data-icon="fa-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span contenteditable="false" id="infoPhone">0113886629</span>
+                        </li>
+                        <li data-icon="fa-envelope">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span contenteditable="false" id="infoEmail">faizmusak@gmail.com</span>
+                        </li>
+                        <li data-icon="fa-flag">
+                            <i class="fa-solid fa-flag"></i>
+                            <span contenteditable="false" id="infoNationality">Malaysian</span>
+                        </li>
+                        <li data-icon="fa-id-card">
+                            <i class="fa-solid fa-id-card"></i>
+                            <span contenteditable="false" id="infoLicense">Driving Licence: B2, D</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Skills -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading"><i class="fa-solid fa-star"></i> Skills</h3>
+                    <div id="skillsList">
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">Java Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:85%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">Python Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:75%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">Php Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:90%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">Java Script</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:80%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:88%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" contenteditable="false">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:70%"></div>
+                            </div>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete skill">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="add-btn" id="addSkillBtn" onclick="openModal('skillModal')" style="display:none;">
+                        <i class="fa-solid fa-circle-plus"></i> Add Skill
+                    </button>
+                </div>
+
+                <!-- Hobbies -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading"><i class="fa-solid fa-heart"></i> Hobbies</h3>
+                    <div id="hobbiesList">
+                        <div class="hobby-item">
+                            <span class="hobby-name" contenteditable="false">Hiking</span>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete hobby">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="hobby-item">
+                            <span class="hobby-name" contenteditable="false">Photography</span>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete hobby">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="add-btn" id="addHobbyBtn" onclick="openModal('hobbyModal')" style="display:none;">
+                        <i class="fa-solid fa-circle-plus"></i> Add Hobby
+                    </button>
+                </div>
+
+                <!-- References -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-heading"><i class="fa-solid fa-address-book"></i> References</h3>
+                    <div id="referencesList">
+                        <div class="ref-item">
+                            <p class="ref-name" contenteditable="false">Jumat Bin Tamir, Gross Synergy Sdn Bhd</p>
+                            <p class="ref-contact" contenteditable="false">014-8731320</p>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete reference">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="ref-item">
+                            <p class="ref-name" contenteditable="false">Muhammad Azri Baharuddin Bin Abdul Razak, Solution X Software</p>
+                            <p class="ref-contact" contenteditable="false">013-262 1482</p>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete reference">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="ref-item">
+                            <p class="ref-name" contenteditable="false">Professor Ts Dr Muhammad Suzuri Bin Hitam, University Malaysia Terengganu</p>
+                            <p class="ref-contact" contenteditable="false">019-980 3489</p>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete reference">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <div class="ref-item">
+                            <p class="ref-name" contenteditable="false">Pn Nor Fatimah Binti A. Aziz, Kolej Vokasional Sungai Buloh</p>
+                            <p class="ref-contact" contenteditable="false">017-404 8458</p>
+                            <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete reference">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="add-btn" id="addRefBtn" onclick="openModal('refModal')" style="display:none;">
+                        <i class="fa-solid fa-circle-plus"></i> Add Reference
+                    </button>
+                </div>
+
+            </aside>
+
+            <!-- ══════ MAIN CONTENT ══════ -->
+            <main class="main-content">
+
+                <!-- Summary Section -->
+                <section class="resume-section">
+                    <h2 class="section-title"><i class="fa-solid fa-user-tie"></i> Summary</h2>
+                    <p contenteditable="false" id="summary" class="summary-text">
+                        To obtain a position as a software engineer in a fast-paced organisation where technical skills and creative thinking are useful. <strong>2 years of hands-on experience</strong> in designing, developing, and maintaining web and software applications. My expertise covers the full software development lifecycle, from gathering requirements and writing clean, efficient code to testing, deployment, and post-release support. Skilled in PHP, JavaScript, Python, SQL.
+                    </p>
+                </section>
+
+                <!-- Work Experience Section -->
+                <section class="resume-section">
+                    <div class="section-header-row">
+                        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+                        <button class="add-btn" id="addWorkBtn" onclick="openModal('workModal')" style="display:none;">
+                            <i class="fa-solid fa-circle-plus"></i> Add Experience
+                        </button>
+                    </div>
+                    
+                    <div id="workList" class="entries-timeline">
+                        <div class="job-entry card-glow">
+                            <div class="job-header">
+                                <div class="job-header-left">
+                                    <h4 class="job-role" contenteditable="false">Software Programmer</h4>
+                                    <span class="job-company" contenteditable="false">Gross Synergy Sdn Bhd, Ampang Jaya, Selangor</span>
+                                </div>
+                                <div class="job-header-right">
+                                    <span class="job-period" contenteditable="false">March 2023 – Present</span>
+                                    <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete experience">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="job-bullets" contenteditable="false">
+                                <li>Developed, maintained, and enhanced Point of Sale (POS) system to ensure smooth and efficient business operations.</li>
+                                <li>Designed and implemented features for sales transactions, inventory management, user access control, and reporting modules.</li>
+                                <li>Troubleshoot and resolved system errors, bugs, and performance issues to ensure high system reliability.</li>
+                                <li>Worked with databases (MySQL Server) to manage product data, customer records, and transaction history.</li>
+                                <li>Customized POS solutions to meet client-specific business requirements.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry card-glow">
+                            <div class="job-header">
+                                <div class="job-header-left">
+                                    <h4 class="job-role" contenteditable="false">Internship (Software Programmer)</h4>
+                                    <span class="job-company" contenteditable="false">Solution X Software Sdn Bhd, Petaling Jaya, Selangor</span>
+                                </div>
+                                <div class="job-header-right">
+                                    <span class="job-period" contenteditable="false">July – January 2023</span>
+                                    <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete experience">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="job-bullets" contenteditable="false">
+                                <li>To plan and design the structure and design of web pages.</li>
+                                <li>To develop and enhance extra features that can enhance the user experience.</li>
+                                <li>Participate in the entire application lifecycle, focusing on coding and debugging.</li>
+                                <li>Write clean code to develop functional web applications.</li>
+                                <li>Troubleshoot and debug applications.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry card-glow">
+                            <div class="job-header">
+                                <div class="job-header-left">
+                                    <h4 class="job-role" contenteditable="false">Internship (Machine Operator)</h4>
+                                    <span class="job-company" contenteditable="false">DayBrite Sdn Bhd, Shah Alam, Selangor</span>
+                                </div>
+                                <div class="job-header-right">
+                                    <span class="job-period" contenteditable="false">November 2016 – April 2017</span>
+                                    <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete experience">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="job-bullets" contenteditable="false">
+                                <li>Ensure maximum client satisfaction by providing exceptional and personalised service, enhancing client satisfaction.</li>
+                                <li>Control and adjust CNC machine setting.</li>
+                                <li>Feed raw materials or part to semi-automated machine.</li>
+                                <li>Fix issue that might occur during the shift.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="resume-section">
+                    <div class="section-header-row">
+                        <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                        <button class="add-btn" id="addEduBtn" onclick="openModal('eduModal')" style="display:none;">
+                            <i class="fa-solid fa-circle-plus"></i> Add Education
+                        </button>
+                    </div>
+
+                    <div id="educationList" class="entries-timeline">
+                        <div class="edu-entry card-glow">
+                            <div class="edu-header">
+                                <div class="edu-header-left">
+                                    <h4 class="edu-degree" contenteditable="false">Bachelor of Computer Science (Software Engineering) with Honours</h4>
+                                    <span class="edu-school" contenteditable="false">Universiti Teknologi MARA (UiTM)</span>
+                                </div>
+                                <div class="edu-header-right">
+                                    <span class="edu-period" contenteditable="false">2019 – 2023</span>
+                                    <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete education">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="edu-detail" contenteditable="false">Faculty of Computer & Mathematical Sciences, Shah Alam, Selangor</p>
+                        </div>
+
+                        <div class="edu-entry card-glow">
+                            <div class="edu-header">
+                                <div class="edu-header-left">
+                                    <h4 class="edu-degree" contenteditable="false">Diploma in Computer Science</h4>
+                                    <span class="edu-school" contenteditable="false">Universiti Teknologi MARA (UiTM)</span>
+                                </div>
+                                <div class="edu-header-right">
+                                    <span class="edu-period" contenteditable="false">2016 – 2019</span>
+                                    <button class="remove-btn" onclick="removeEntry(this)" style="display:none;" title="Delete education">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="edu-detail" contenteditable="false">Faculty of Computer & Mathematical Sciences, Kuala Pilah, Negeri Sembilan</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- ───────── MODALS ───────── -->
+    
+    <!-- Skill Modal -->
+    <div id="skillModal" class="modal-overlay" style="display:none;" onclick="handleOverlayClick(event, 'skillModal')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-star icon-glow"></i> Add Skill</h3>
+                <button class="close-modal-btn" onclick="closeModal('skillModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="newSkillName">Skill Name</label>
+                    <input type="text" id="newSkillName" placeholder="e.g. React.js, Docker, Java" />
+                </div>
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="newSkillLevel">Proficiency</label>
+                        <span id="skillLevelVal" class="level-badge">75%</span>
+                    </div>
+                    <input type="range" id="newSkillLevel" min="10" max="100" value="75" oninput="updateSkillBadge(this.value)" />
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal('skillModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmAddSkill()">Add Skill</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Modal -->
+    <div id="workModal" class="modal-overlay" style="display:none;" onclick="handleOverlayClick(event, 'workModal')">
+        <div class="modal modal-lg">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-briefcase icon-glow"></i> Add Work Experience</h3>
+                <button class="close-modal-btn" onclick="closeModal('workModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-row">
+                    <div class="input-group flex-1">
+                        <label for="newWorkRole">Job Role / Title</label>
+                        <input type="text" id="newWorkRole" placeholder="e.g. Senior Software Engineer" />
+                    </div>
+                    <div class="input-group flex-1">
+                        <label for="newWorkPeriod">Employment Period</label>
+                        <input type="text" id="newWorkPeriod" placeholder="e.g. June 2024 – Present" />
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="newWorkCompany">Company Name &amp; Location</label>
+                    <input type="text" id="newWorkCompany" placeholder="e.g. Google Malaysia, Kuala Lumpur" />
+                </div>
+                <div class="input-group">
+                    <label for="newWorkBullets">Responsibilities (one per line)</label>
+                    <textarea id="newWorkBullets" rows="5" placeholder="• Developed scalable web APIs&#10;• Mentored junior engineers&#10;• Refactored legacy React applications"></textarea>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal('workModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmAddWork()">Add Experience</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edu Modal -->
+    <div id="eduModal" class="modal-overlay" style="display:none;" onclick="handleOverlayClick(event, 'eduModal')">
+        <div class="modal modal-lg">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-graduation-cap icon-glow"></i> Add Education</h3>
+                <button class="close-modal-btn" onclick="closeModal('eduModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-row">
+                    <div class="input-group flex-2">
+                        <label for="newEduRole">Qualification / Degree</label>
+                        <input type="text" id="newEduRole" placeholder="e.g. Master of Computer Science" />
+                    </div>
+                    <div class="input-group flex-1">
+                        <label for="newEduPeriod">Study Period</label>
+                        <input type="text" id="newEduPeriod" placeholder="e.g. 2024 – 2026" />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group flex-1">
+                        <label for="newEduSchool">Institution / University</label>
+                        <input type="text" id="newEduSchool" placeholder="e.g. Universiti Malaya (UM)" />
+                    </div>
+                    <div class="input-group flex-1">
+                        <label for="newEduDetail">Faculty / Details (Optional)</label>
+                        <input type="text" id="newEduDetail" placeholder="e.g. Faculty of Computer Science & Information Technology" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal('eduModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmAddEducation()">Add Education</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobby Modal -->
+    <div id="hobbyModal" class="modal-overlay" style="display:none;" onclick="handleOverlayClick(event, 'hobbyModal')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-heart icon-glow"></i> Add Hobby</h3>
+                <button class="close-modal-btn" onclick="closeModal('hobbyModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="newHobbyName">Hobby Name</label>
+                    <input type="text" id="newHobbyName" placeholder="e.g. Playing Chess, Swimming, Gaming" />
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal('hobbyModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmAddHobby()">Add Hobby</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reference Modal -->
+    <div id="refModal" class="modal-overlay" style="display:none;" onclick="handleOverlayClick(event, 'refModal')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-address-book icon-glow"></i> Add Reference</h3>
+                <button class="close-modal-btn" onclick="closeModal('refModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="newRefName">Referee Name &amp; Organisation</label>
+                    <input type="text" id="newRefName" placeholder="e.g. Jane Doe, Tech Lead at ABC Co." />
+                </div>
+                <div class="input-group">
+                    <label for="newRefContact">Contact Information (Phone / Email)</label>
+                    <input type="text" id="newRefContact" placeholder="e.g. 012-345 6789 / jane.doe@abc.com" />
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal('refModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmAddReference()">Add Reference</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
